@@ -1,0 +1,46 @@
+/*
+    Author: Luke Smith
+    Date: 10/1/2025
+    Source JavaScript30 by Wes Bos https://javascript30.com/
+*/
+html {
+    color: black;
+    font-family: sans-serif;
+  }
+  
+body {
+    margin: 0;
+  }
+/* controls bar for the color pickers */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fafafa;
+}
+
+.controls label {
+    display: flex;
+    align-items : center;
+    gap: .5rem;
+    font-size: 14px;
+}
+  
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  h1 {
+    /* default shadow so there’s something before interaction */
+    text-shadow: 10px 10px 0 rgba(0,0,0,1);
+    font-size: 100px;
+    margin: 0;
+    text-align: center;
+  }
