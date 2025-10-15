@@ -1,0 +1,73 @@
+/*
+Author: Luke Smith
+Date: 10/15/2025
+Source JavaScript30 by Wes Bos https://javascript30.com/
+*/
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #4C4C4C url('https://unsplash.it/1500/900?image=1021');
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 850px;
+  display: flex;
+}
+
+video {
+  box-shadow: 0 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.wrapper { width: 850px; display: flex; }
+
+.speed-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;              
+  margin: 10px;
+}
+
+.speed {
+  background: #efefef;
+  border-radius: 50px;
+  box-shadow: 0 0 1px 3px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 100px;          
+  height: 430px;         
+  display: flex;
+  align-items: flex-start;
+}
+
+.speed-bar {
+  width: 100%;
+  background: linear-gradient(-170deg, #2376ae 0%, #c16ecf 100%);
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  color: white;
+  height: 16.3%;
+}
+
+.arrow {
+  background: #2376ae;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.1s;
+}
+.arrow:hover { transform: scale(1.08); }
