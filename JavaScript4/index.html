@@ -1,0 +1,33 @@
+<!--
+Author: Luke Smith
+Date: 10/15/2025
+Source JavaScript30 by Wes Bos https://javascript30.com/
+Whats new: Added up and down arrows to increment/decrement speed in 0.1x steps.
+What was difficult: Figuring out how to keep the speed bar and video speed in sync
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Speed Scrubber</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/✅" />
+</head>
+<body>
+  <div class="wrapper">
+    <video class="flex" width="765" height="430"
+           src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" loop controls></video>
+
+    <div class="speed-stack">
+      <button class="arrow up" type="button" aria-label="Increase speed">▲</button>
+      <div class="speed">
+        <div class="speed-bar">1×</div>
+      </div>
+      <button class="arrow down" type="button" aria-label="Decrease speed">▼</button>
+    </div>
+  </div>
+
+  <script src="javascript4.js"></script>
+</body>
+</html>
