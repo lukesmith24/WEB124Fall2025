@@ -1,0 +1,32 @@
+<!--
+Author: Luke Smith
+Date: 10/22/2025
+Source JavaScript30 by Wes Bos https://javascript30.com/
+Whats new: Limited the list 20 results, added a yellow highlight and 3d pop effect to matched text.
+Also added scroll to top and bottom buttons. 
+What was difficult: Making sure the scroll buttons worked after the page loaded because
+it was running before the buttons existed in the DOM.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/✅" />
+</head>
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <li>Filter for a city</li>
+      <li>or a state</li>
+    </ul>
+  </form>
+  <script src="script.js" defer></script>
+  <button id="scrollUp" class="scroll-btn" title="Go to top">⬆️</button>
+  <button id="scrollDown" class="scroll-btn" title="Scroll down">⬇️</button>
+  </body>
+</html>
