@@ -1,0 +1,107 @@
+/*
+    Final Exam Project - JavaScript Calculator
+    Author: Luke Smith
+    Date: 10/29/2025
+*/
+
+* { box-sizing: border-box; }
+html { font-size: 16px; }
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  background: #f5f5f7;
+  color: #222;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-weight: 700;
+}
+
+.input-area {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0.75rem 0 1.25rem;
+}
+
+label {
+  font-weight: 600;
+}
+
+input[type="number"] {
+  inline-size: min(14rem, 60vw);
+  padding: 0.5rem 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button#calculateBtn {
+  padding: 0.55rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  background: #222;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+button#calculateBtn:hover { transform: translateY(-1px); opacity: 0.95; }
+button#calculateBtn:active { transform: translateY(0); opacity: 0.9; }
+
+input[type="number"]:focus-visible,
+button#calculateBtn:focus-visible {
+  outline: 3px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+.operations {
+  text-align: center;
+}
+
+.operations p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2.5rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-align: left;
+  min-inline-size: 12rem;
+  white-space: normal;
+  word-break: break-word;
+  margin-top: 0.5rem;
+}
+@media (max-width: 520px) {
+  body { padding: 1rem; }
+
+  .input-area {
+    display: block;
+  }
+  .input-area > * {
+    display: block;
+    width: 100%;
+    margin: 0.5rem auto;
+  }
+
+  .operations p {
+    display: block;
+    min-inline-size: auto;
+    margin: 0.75rem auto 0;
+    text-align: left;
+    max-width: 28rem;
+  }
+}
+
+@media (max-width: 900px) {
+  body { padding: 1.5rem; }
+  input[type="number"] { inline-size: 80%; }
+  .operations p { margin: 0.5rem 1rem; }
+}
+
